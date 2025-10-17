@@ -9,6 +9,10 @@ requirements = []
 path = 'contracts/Warehouse-Receipt-Tokenization-for-Grain.clar'
 clarity_version = 3
 epoch = 3.1
+[contracts.receipt-fractionalization]
+path = 'contracts/receipt-fractionalization.clar'
+clarity_version = 3
+epoch = 3.1
 [repl.analysis]
 passes = ['check_checker']
 
