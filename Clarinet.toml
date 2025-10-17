@@ -1,0 +1,27 @@
+[project]
+name = 'Warehouse-Receipt-Tokenization-for-Grain'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.Warehouse-Receipt-Tokenization-for-Grain]
+path = 'contracts/Warehouse-Receipt-Tokenization-for-Grain.clar'
+clarity_version = 3
+epoch = 3.1
+[contracts.receipt-fractionalization]
+path = 'contracts/receipt-fractionalization.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
